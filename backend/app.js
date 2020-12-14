@@ -24,8 +24,8 @@ const cors = require('cors');
 const app = express();
 app.use(cors())
 
-// const token = "32fb2161bff801a27c675d52dbf258a7722e5c54"
-const token = "e3d389771196a5987004eb76288693f06f0a1745"
+// const token = ""
+const token = ""
 
 app.get('/', (req, res) => {
   res.status(200).send('Hello, world!').end();
@@ -238,7 +238,7 @@ app.get('/dailychart/:ticker', (req, res) => {
 // 		})
 // })
 
-const newsToken = 'c6b59a15e03e47d791237783644da323'
+const newsToken = ''
 
 app.get('/news/:ticker', (req, res) => {
 	var request = require('request');
